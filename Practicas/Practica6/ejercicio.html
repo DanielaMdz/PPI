@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Práctica Multimedia</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<a href="../index.html" class="back-btn">Regresar</a><br><br>
+<body><center>
+  <h1>Me</h1>
+  <p>En esta página se muestran algunos de mis gustos.</p>
+
+  <h2>Video en HTML5</h2>
+  <p>Uno de mis personajes e Sanrio favoritos.</p>
+  <video controls width="400" autoplay>
+    <source src="hanamaruobake.mp4" type="video/mp4">
+  </video>
+
+  <h2>Audio</h2>
+  <p>Una de mis canciones favoritas</p>
+  <audio controls style="color: rgb(228, 120, 161);">
+    <source src="LoveHangover.mp3" type="audio/mp3">
+  </audio>
+
+<h2>Video de YouTube</h2>
+<p>Otra canción que me gusta.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/YVN14KHWRTo?si=8UTwkwRjGVdl4ksL" 
+title="YouTube video player" frameborder="0" 
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+  <h2>Feed de Twitter</h2>
+  <p>Artista que acabo de encontrar en X</p>
+  <blockquote class="twitter-tweet" data-dnt="true"><p lang="en" dir="ltr">Staying warm together ❄️ 
+    <a href="https://t.co/qnbenFcxH5">pic.twitter.com/qnbenFcxH5</a></p>&mdash; Chii🌻 (@cremechii) 
+    <a href="https://twitter.com/cremechii/status/1869031744969830904?ref_src=twsrc%5Etfw">December 17, 2024</a>
+  </blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+  <h2>Feed de Facebook</h2>
+  <p>Universidad a la que asisto</p>
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous"
+    src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v17.0"></script>
+
+  <div class="fb-page"
+    data-href="https://www.facebook.com/UniversidadAnahuac"
+    data-tabs="timeline"
+    data-width="600"
+    data-height="400"
+    data-small-header="false"
+    data-adapt-container-width="true"
+    data-hide-cover="false"
+    data-show-facepile="true">
+  </div>
+
+  <h2>Geolocalización con Google Maps</h2>
+  <p>Presione el botón para obtener su ubicación:</p>
+  <button onclick="getLocation()">Mostrar ubicación</button>
+  <p id="demo"></p>
+  <div id="mapholder"></div>
+
+  <script>
+    var x = document.getElementById("demo");
+
+    function getLocation() {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition, showError);
+      } else {
+        x.innerHTML = "El navegador no soporta geolocalización.";
+      }
+    }
+
+    function showPosition(position) {
+      let lat = position.coords.latitude;
+      let lon = position.coords.longitude;
+
+      let url = `https://maps.google.com/maps?q=${lat},${lon}&z=15&output=embed`;
+      document.getElementById("mapholder").innerHTML =
+        `<iframe width="600" height="400" src="${url}" style="border:0;" allowfullscreen></iframe>`;
+    }
+
+    function showError(error) {
+      switch (error.code) {
+        case error.PERMISSION_DENIED:
+          x.innerHTML = "El usuario negó la solicitud de geolocalización.";
+          break;
+        case error.POSITION_UNAVAILABLE:
+          x.innerHTML = "La información de ubicación no está disponible.";
+          break;
+        case error.TIMEOUT:
+          x.innerHTML = "La solicitud de ubicación ha caducado.";
+          break;
+        case error.UNKNOWN_ERROR:
+          x.innerHTML = "Error desconocido.";
+          break;
+      }
+    }
+  </script></center>
+</body>
+</html>

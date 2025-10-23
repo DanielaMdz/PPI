@@ -1,0 +1,105 @@
+
+body {
+    font-family: 'Arial', sans-serif; 
+    background: linear-gradient(135deg, #fdb4b4, #fff8c7);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 20px;
+}
+
+.main-card {
+    background: #fff4f4; 
+    padding: 60px;
+    border-radius: 15px;
+    text-align: center;
+    max-width: 1000px;
+    width: 90%;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    font-family: "Delius", cursive;
+}
+
+h1 {    
+    color: brown;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+}
+
+h2 {
+    color: #ba7b7c;
+    margin-bottom: 15px; 
+    font-size: 1.5em;
+}
+
+.back-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: #8D6E63;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.1s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'Arial', sans-serif; 
+}
+
+.back-btn:hover {
+    background: #6D4C41;
+    transform: translateY(-2px);
+}
+
+.back-btn::before {
+    content: "←";
+    font-size: 1.2em;
+}
+
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    text-align: left;
+    margin: 40px 0;
+}
+
+.info-section h2 {
+    border-bottom: 2px solid #fdb4b4;
+    padding-bottom: 10px;
+}
+
+.info-item {
+    margin-bottom: 10px;
+}
+
+.info-item strong {
+    color: #6D4C41;
+}
+
+.social-links {
+    margin-top: 40px;
+}
+
+.social-btn {
+    display: inline-block;
+    background-color: #E57373;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    font-family: 'Arial', sans-serif; 
+}
+
+.social-btn:hover {
+    background-color: #9f6371;
+    transform: translateY(-2px);
+}

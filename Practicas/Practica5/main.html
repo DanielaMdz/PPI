@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 5</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script type="text/javascript" src="validar.js"></script>
+    
+</head>
+<body>
+    <a href="../index.html" class="back-btn">Regresar</a><br><br>
+    <h1>Formulario de Registro</h1>
+    <p>Ingrese la información solicitada</p>
+    <form id="registroForm">
+    <label for="Nombre">Nombre: </label><br>
+    <input type="text" id="Nombre" name="Nombre"><br>
+
+    <label for="Correo">Correo </label><br>
+    <input type="email" id="Correo" name="Correo"><br>
+
+    <p>Escoja su género</p>
+    <label><input type="radio" name="gender" value="Femenino"> Femenino</label><br>
+    <label><input type="radio" name="gender" value="Masculino"> Masculino</label><br>
+    <label><input type="radio" name="gender" value="Otro"> Otro</label><br>
+
+    <p>Seleccione sus intereses:</p>
+    <input type="checkbox" name="interes" value="Deportes"> Deportes <br>
+    <input type="checkbox" name="interes" value="Música"> Música <br>
+    <input type="checkbox" name="interes" value="Viajes"> Viajes <br>
+
+    <label for="Hora">Hora local</label><br>
+    <input type="datetime-local" name="Hora" id="Hora"><br>
+
+    <label for="Color">Color Favorito</label><br>
+    <input type="color" name="Color" id="Color"><br>
+
+    <label for="Calificacion">Calificacion</label><br>
+    <input type="range" name="Calificacion" id="Calificacion">
+</form>
+<button onclick="validar()">Validar</button>
+
+<h2>Registros</h2>
+<table id="tabla"></table>
+
+</body>
+
+</body>
+</html>

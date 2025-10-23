@@ -1,0 +1,91 @@
+h2{
+    color: paleviovarred;
+    font-family: cursive;
+    text-align: center;
+}
+body{
+    background-color: rgba(250, 227, 231, 0.836);
+}
+table{
+    border: 2px solid rgb(255, 253, 254);
+    border-collapse: collapse;
+    padding: 15px;
+    border-style: dotted;
+    
+}
+#table2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 100%;
+    border: 5px s;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+#table2 th{
+    font-size: 1.1em;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 4px;
+    background-color: #8a117a;
+    color: #ffff;
+    font-family:'Courier New', Courier, monospace;
+    border: 1px solid #cea2c8;
+    border-style: dotted;
+}
+
+#table2 tr.ren1 td{
+    color: black;
+    background-color: #f7bfd688;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    border: 1px solid #8a117a;
+    border-style: dotted;
+}
+
+#table2 tr.ren2 td{ 
+    color: black;
+    background-color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    border: 1px solid #8a117a;
+    border-style: dotted;
+}
+div{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    gap: 20px;
+    background-color:rgba(205, 222, 247, 0.692);
+    border-radius: 50px;
+}
+
+div img{
+    width: 250px;
+    height: 200px;
+    border-radius: 20px;
+}
+.back-btn {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: #8D6E63;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background 0.3s ease, transform 0.1s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .back-btn:hover {
+            background: #6D4C41;
+            transform: translateY(-2px);
+        }
+
+        .back-btn::before {
+            content: "←";
+            font-size: 1.2em;
+        }

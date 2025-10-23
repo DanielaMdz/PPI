@@ -1,0 +1,135 @@
+h1{
+    color: brown;
+    font-family: cursive;
+}
+h2{
+    color: rgb(95, 4, 4);
+    font-family:'Courier New', Courier, monospace;
+}
+body{
+    background-color: rgba(250, 227, 231, 0.836);
+}
+button{
+    background-color: rgb(245, 220, 232);
+    color: palevioletred;
+
+}
+p{
+    font-family: monospace;
+    font-size: large;
+}
+
+input{
+    background-color: rgb(240, 177, 154);
+}
+
+a{
+    color:rgb(68, 37, 8);
+}
+.indexbody {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #fdb4b4, #fff8c7);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 20px;
+}
+.main-card {
+            background: #fff4f4; 
+            padding: 80px;
+            border-radius: 15px;
+            text-align: center;
+            max-width: 1000px;
+            width: 90%;
+            position: relative;
+        }
+
+                .exercise-links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin: 30px 0;
+        }
+
+        .exercise-btn {
+            display: block;
+            background: #FF6B81;
+            color: rgb(83, 6, 4);
+            padding: 15px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background 0.3s ease, transform 0.1s ease;
+        }
+
+        .exercise-btn:hover {
+            transform: translateY(-2px);
+        }
+
+        .exercise-btn.ej1 {
+            background: #f89c92;
+        }
+
+        .exercise-btn.ej1:hover {
+            background: #fd7373;
+        }
+
+        .exercise-btn.ej2 {
+            background: #f5c084;
+        }
+
+        .exercise-btn.ej2:hover {
+            background: #f79c72;
+        }
+
+        .back-btn {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: #8D6E63;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background 0.3s ease, transform 0.1s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .back-btn:hover {
+            background: #6D4C41;
+            transform: translateY(-2px);
+        }
+
+        .back-btn::before {
+            content: "←";
+            font-size: 1.2em;
+        }
+
+
+        .back-btn-bottom {
+            background: #8D6E63;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .back-btn-bottom:hover {
+            background: #6D4C41;
+        }
+
+        .back-btn-bottom::before {
+            content: "←";
+            font-size: 1.2em;
+        }
+

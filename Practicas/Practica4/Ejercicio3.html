@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio3</title>
+<link rel="stylesheet" href="estilos.css">
+    <script src="Ejercicio3_1.js"></script>
+</head>
+<body>
+    <a href="index.html" class="back-btn">Regresar</a><br><br>
+    <h1>Información</h1>
+    <h2>Ingrese los siguientes datos: </h2>
+    <form action="">
+    <label for="Nombre">Nombre: </label>
+        <input type="text" id="Nombre"><br><br>
+    <label for="Correo">Correo: </label>
+        <input type="email" id="Correo"><br><br>
+    <label for="Edad">Edad: </label>
+        <input type="number" id="Edad">
+    </form><br><br>
+    <div><label>Género: </label></div>
+    <form>
+        <input type="radio" name="Genero" id="Masculino" value="Masculino">
+        <label for="Masculino">Masculino</label>
+        
+        <input type="radio" name="Genero" id="Femenino" value="Femenino"> 
+        <label for="Femenino">Femenino</label>
+        
+        <input type="radio" name="Genero" id="NoBinarie" value="No binarie"> 
+        <label for="NoBinarie">No binarie</label>
+        
+        <input type="radio" name="Genero" id="Otro" value="Otro"> 
+        <label for="Otro">Otro</label>
+    </form><br><br>
+    <form action="">
+        <label for="Fecha">Fecha de nacimiento</label>
+        <input type="date" id="Fecha"><br><br>
+        <label for="Color">Color Favorito</label>
+        <input type="color" id="Color">
+    </form><br><br>
+     <div><button onclick="info()">Insertar Información</button><br><br></div>
+    <p id="Resultado"></p>
+
+</body>
+</html>

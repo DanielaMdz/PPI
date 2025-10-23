@@ -1,0 +1,58 @@
+h1{
+    color: palevioletred;
+    font-family: cursive;
+    text-align: center;
+}
+h2{
+    color: plum;
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+}
+body{
+    background-color: rgba(250, 227, 231, 0.836);
+}
+input{
+    background-color: rgb(221, 169, 169);
+    justify-content: center;
+}
+button{
+    background-color: rgb(245, 220, 232);
+    color: palevioletred;
+
+}
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+form{
+        text-align: center;
+    }
+div{
+    display: flex;
+    justify-content: center;
+}
+        .back-btn {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: #8D6E63;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background 0.3s ease, transform 0.1s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .back-btn:hover {
+            background: #6D4C41;
+            transform: translateY(-2px);
+        }
+
+        .back-btn::before {
+            content: "←";
+            font-size: 1.2em;
+        }

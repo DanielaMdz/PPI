@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mascotas</title>
+  <style>
+    /* Paleta de colores */
+    :root {
+      --cafe-oscuro: #5f2003;
+      --cafe-mas-oscuro: #330303;
+      --naranja: #f7a873;
+      --naranja-claro: #f8ddcc;
+      --crema: #f7e8df;
+      --blanco: #ffffff;
+      --texto: #333333;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      color: var(--texto);
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: var(--crema);
+    }
+
+    h1 {
+      color: var(--cafe-oscuro);
+      border-bottom: 3px solid var(--naranja);
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      color: var(--blanco);
+      background-color: var(--cafe-oscuro);
+      padding: 8px 12px;
+      border-radius: 8px;
+      margin-top: 0;
+    }
+
+    h3, h4, h5, h6 {
+      color: var(--cafe-oscuro);
+      margin-top: 20px;
+    }
+
+    .bloque {
+      background-color: var(--cafe-mas-oscuro);
+      color: var(--blanco);
+      padding: 15px 20px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+
+    .bloque ul, .bloque ol {
+      margin-left: 20px;
+    }
+
+    .sub-bloque {
+      background-color: var(--blanco);
+      border: 1px solid var(--naranja-claro);
+      border-radius: 10px;
+      padding: 15px;
+      margin-bottom: 20px;
+    }
+
+    dl dt {
+      font-weight: bold;
+      color: var(--cafe-oscuro);
+    }
+
+    dl dd {
+      margin-bottom: 10px;
+      margin-left: 15px;
+    }
+
+    form {
+      margin-top: 15px;
+      padding: 15px;
+      background-color: var(--blanco);
+      border: 1px solid var(--naranja-claro);
+      border-radius: 10px;
+    }
+    input[type="text"],
+    input[type="password"],
+    input[type="number"],
+    input[type="date"],
+    input[type="color"],
+    input[type="email"],
+    input[type="file"],
+    input[type="range"] {
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid var(--naranja-claro);
+      border-radius: 6px;
+    }
+
+    input[type="button"] {
+      background-color: var(--cafe-oscuro);
+      color: var(--blanco);
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+        .back-btn {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: #8D6E63;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background 0.3s ease, transform 0.1s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .back-btn:hover {
+            background: #6D4C41;
+            transform: translateY(-2px);
+        }
+
+        .back-btn::before {
+            content: "←";
+            font-size: 1.2em;
+        }
+
+  </style>
+</head>
+<body>
+      <a href="../index.html" class="back-btn">Regresar</a><br><br>
+  <h1>Guía completa de Mascotas</h1>
+
+  <div class="bloque">
+
+    <h2>Tipos de Mascotas populares</h2>
+    <ol>
+      <li>Perros</li>
+      <li>Gatos</li>
+      <li>Aves (loros, canarios, periquitos)</li>
+      <li>Roedores (ratones, conejos, hamsters)</li>
+      <li>Reptiles (Tortugas, serpientes, lagartos)</li>
+      <li>Anfibios (ranas, salamancas)</li>
+      <li>Arácnidos (tarántulas)</li>
+      <li>Peces</li>
+      <li>Hurones</li>
+      <li>Pequeños animales de granja (gallinas, cabras miniatura)</li>
+    </ol>
+  </div>
+
+  <div class="bloque">
+    <h3 style="color: #f8ddcc;">Beneficios de Tener Mascotas</h3>
+    <ul>
+      <li>Reducen el estrés y la ansiedad</li>
+      <li>Fomentan la responsabilidad, especialmente en niños</li>
+      <li>Proporcionan compañía y disminuyen la sensación de soledad</li>
+      <li>Incentivan la actividad física (paseos, juegos)</li>
+      <li>Mejoran la salud cardiovascular</li>
+      <li>Enseñan valores como el respeto y la empatía</li>
+      <li>Ayudan a socializar y conocer nuevas personas</li>
+      <li>Fortalecen el sistema inmunológico en niños</li>
+      <li>Proporcionan seguridad (especialmente los perros)</li>
+      <li>Mejoran el estado de ánimo general</li>
+    </ul>
+  </div>
+
+  <div class="sub-bloque">
+    <h4>Cuidados Esenciales para Mascotas</h4>
+    <dl>
+      <dt>Alimentación Adecuada</dt>
+      <dd>Proporcionar una dieta balaceada específica para cada tipo de mascota, con las cantidades apropiadas y horarios regulares.</dd>
+
+      <dt>Atención veterinaria</dt>
+      <dd>Revisiones periódicas, vacunación al día y atención inmediata ante signos de enfermedad.</dd>
+
+      <dt>Ejercicio y estimulación mental</dt>
+      <dd>Paseos, juegos y juguetes interactivos para mantener a la mascota física y mentalmente activa.</dd>
+
+      <dt>Higiene y cuidado del espacio</dt>
+      <dd>Baños regulares, cepillado, limpieza de jaulas/peceras y recogida inmediata de desechos.</dd>
+
+      <dt>Socialización</dt>
+      <dd>Exposición controlada a diferentes entornos, personas y animales, junto con refuerzo positivo para un comportamiento adecuado.</dd>
+    </dl>
+  </div>
+
+  <div class="sub-bloque">
+    <h5>Consideraciones Legales sobre Mascotas</h5>
+    <h6>En muchos países y municipios existen regulaciones específicas sobre la tenencia de animales de compañía.</h6>
+  </div>
+
+  <h1>Formulario</h1>
+
+  <form>
+    <h5>Usuario</h5>
+    <label for="Usuario">Inserte su usuario</label>
+    <input type="text">
+
+    <h5>Contraseña de acceso</h5>
+    <label for="Contraseña">Contraseña de acceso</label>
+    <input type="password" name="password">
+  </form>
+
+  <form>
+    <h2>Formulario de Registro de mascota</h2>
+    <h3>Datos del animal de compañía</h3>
+
+    <label for="Datos animal">Nombre del animal de compañía</label>
+    <input type="text"><br><br>
+
+    <label for="Edad animal">Edad del animal de compañía</label>
+    <input type="number"><br><br>
+
+    <label for="Fecha de nacimiento">Fecha de nacimiento</label>
+    <input type="date"><br><br>
+
+    <label for="Color">Color del animal de compañía</label>
+    <input type="color"><br><br>
+
+    <label for="Foto">Subir foto mascota</label>
+    <input type="file"><br><br>
+
+    <label for="Nivel energía">Inserte el nivel de energía del animal de compañía</label>
+    <input type="range"><br><br>
+  </form>
+
+  <form>
+    <h4>Datos del dueño</h4>
+    <label for="Nombre Dueño">Nombre del dueño</label>
+    <input type="text"><br><br>
+
+    <label for="Correo">Inserte su correo</label>
+    <input type="email"><br><br>
+  </form>
+
+  <form>
+    <h3>Servicios deseados</h3>
+    <input type="checkbox" id="Vacunas">
+    <label for="Vacunas">Vacunas</label><br>
+
+    <input type="checkbox" id="Guardería">
+    <label for="Guardería">Guardería</label><br>
+
+    <input type="checkbox" id="Peluquería">
+    <label for="Peluquería">Peluquería</label><br>
+
+    <input type="checkbox" id="Consulta">
+    <label for="Consulta">Consulta</label>
+  </form>
+
+  <form>
+    <h3>Tipo de animal de compañía</h3>
+    <input type="radio" id="Perro" name="tipo_animal" value="Perro">
+    <label for="Perro">Perro</label><br>
+
+    <input type="radio" id="Gato" name="tipo_animal" value="Gato">
+    <label for="Gato">Gato</label><br>
+
+    <input type="radio" id="Ave" name="tipo_animal" value="Ave">
+    <label for="Ave">Ave</label><br>
+
+    <input type="radio" id="Otro" name="tipo_animal" value="Otro">
+    <label for="Otro">Otro</label>
+  </form>
+
+  <h6>Recuerde: El tener un animal de compañía tiene sus obligaciones</h6>
+
+  <form>
+    <input type="button" value="Submit">
+  </form>
+</body>
+</html>

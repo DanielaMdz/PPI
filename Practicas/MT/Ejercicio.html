@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Unidades</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crafty+Girls&family=Delius&family=Winky+Rough&display=swap" rel="stylesheet">
+</head>
+<body>
+    <a href="../index.html" class="back-btn">Regresar</a>
+    <div class="conv">
+        <h1>Ejercicio segunda parte del MT</h1>
+        <h2>Conversor de unidades</h2>
+        
+        <form class="conv-form">
+            <div class="form-group">
+                <label for="tipoUnidad">Unidad que se quiere convertir</label>
+                <select id="tipoUnidad">
+                    <option value="">-- Selecciona un tipo --</option>
+                    <option value="Temperatura">Temperatura</option>
+                    <option value="Distancia">Distancia</option>
+                    <option value="Tiempo">Tiempo</option>
+                    <option value="Moneda">Moneda</option>
+                </select><br><br>
+            </div>
+            
+            <div id="dynamic-selects"></div><br><br>
+
+            <div class="form-group">
+                <label for="valor">Inserte el valor a convertir</label>
+                <input type="number" id="valor" placeholder="Ej: 100">
+            </div>
+
+            <div class="form-group">
+                 <button type="button" onclick="convertir()" class="boton">Convertir</button>
+            </div><br><br>
+
+            <div class="result-box">
+                <p>Resultado:</p>
+                <p id="resultado">-</p>
+            </div>
+        </form>
+    </div>
+
+    <script src="Ejercicio.js"></script>
+</body>
+</html>
